@@ -23,4 +23,9 @@ public enum Status {
             default : return this;
         }
     }
+
+    public boolean isCell() 
+    {
+        return this == LIVE || this == DIED;
+    }
 }
